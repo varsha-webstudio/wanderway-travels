@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore amazing destinations and plan your next adventure with WanderWay Travels.">
+  <title>WanderWay Travels | Explore the World</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#home" class="logo">Wander<span>Way.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#about">About</a>
+      <a href="#contact">Plan Your Trip</a>
+    </nav>
+
+    <a href="#contact" class="nav-button">Let's Travel ↗</a>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">✦ DISCOVER SOMETHING NEW</p>
+
+        <h1>The world is<br>
+          <span>waiting for you.</span>
+        </h1>
+
+        <p class="hero-description">
+          Discover breathtaking destinations, find your next adventure,
+          and create memories that last a lifetime.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#destinations" class="btn btn-primary">
+            Explore Destinations <span>↗</span>
+          </a>
+          <a href="#about" class="btn btn-outline">
+            Discover Our Story
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="live-dot"></span>
+          YOUR NEXT ADVENTURE STARTS HERE
+        </div>
+      </div>
+
+      <div class="hero-caption">
+        <span>THE BEAUTY OF THE WORLD</span>
+        <span>01 / EXPLORE</span>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="intro section" id="about">
+      <div>
+        <p class="section-label">TRAVEL BEYOND ORDINARY</p>
+        <h2>Not just a trip.<br>A story worth telling.</h2>
+      </div>
+
+      <div class="intro-text">
+        <p>
+          From peaceful mountain escapes to sunny coastal adventures,
+          find inspiration for your next journey. Your dream destination
+          is closer than you think.
+        </p>
+        <a href="#destinations" class="text-link">
+          Find your destination <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="destinations section" id="destinations">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">A WORLD OF POSSIBILITIES</p>
+          <h2>Find your next escape.</h2>
+        </div>
+        <p>Different places. Different feelings.<br>One unforgettable journey.</p>
+      </div>
+
+      <div class="filter-bar" aria-label="Filter destinations">
+        <button class="filter-btn active" data-filter="all">All places</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="beach">Beaches</button>
+        <button class="filter-btn" data-filter="luxury">Luxury</button>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card" data-category="nature"
+                 data-destination="Mountain Adventures">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
+              alt="Majestic mountain peaks" loading="lazy">
+            <span class="card-tag">NATURE</span>
+            <button class="card-arrow" aria-label="Plan a mountain trip">↗</button>
+          </div>
+          <div class="card-info">
+            <div>
+              <h3>Mountain Adventures</h3>
+              <p>Fresh air. Endless horizons.</p>
+            </div>
+            <span class="card-number">01</span>
+          </div>
+        </article>
+
+        <article class="destination-card" data-category="beach"
+                 data-destination="Beach Holidays">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=85"
+              alt="Beautiful tropical beach" loading="lazy">
+            <span class="card-tag">BEACH</span>
+            <button class="card-arrow" aria-label="Plan a beach trip">↗</button>
+          </div>
+          <div class="card-info">
+            <div>
+              <h3>Beach Holidays</h3>
+              <p>Slow days by the sea.</p>
+            </div>
+            <span class="card-number">02</span>
+          </div>
+        </article>
+
+        <article class="destination-card" data-category="luxury"
+                 data-destination="Luxury Getaways">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=85"
+              alt="Luxury resort swimming pool" loading="lazy">
+            <span class="card-tag">LUXURY</span>
+            <button class="card-arrow" aria-label="Plan a luxury trip">↗</button>
+          </div>
+          <div class="card-info">
+            <div>
+              <h3>Luxury Getaways</h3>
+              <p>Comfort meets beautiful views.</p>
+            </div>
+            <span class="card-number">03</span>
+          </div>
+        </article>
+
+        <article class="destination-card" data-category="nature"
+                 data-destination="Forest Escapes">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=85"
+              alt="Sunlight through a green forest" loading="lazy">
+            <span class="card-tag">NATURE</span>
+            <button class="card-arrow" aria-label="Plan a forest trip">↗</button>
+          </div>
+          <div class="card-info">
+            <div>
+              <h3>Forest Escapes</h3>
+              <p>Reconnect with the wild.</p>
+            </div>
+            <span class="card-number">04</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Feature banner -->
+    <section class="feature-banner">
+      <div class="feature-content">
+        <p class="section-label">YOUR JOURNEY, YOUR WAY</p>
+        <h2>Collect moments.<br>Not just miles.</h2>
+        <p>
+          Take a break from the everyday and discover places
+          that make you feel alive.
+        </p>
+        <a href="#contact" class="btn btn-primary">
+          Start Planning <span>↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Trip planner -->
+    <section class="contact section" id="contact">
+      <div class="contact-copy">
+        <p class="section-label">LET'S MAKE IT HAPPEN</p>
+        <h2>Your next adventure<br>starts with a plan.</h2>
+        <p>
+          Tell us what you have in mind. This demo lets you prepare
+          a trip request right here.
+        </p>
+
+        <div class="contact-benefit">
+          <span>✦</span>
+          <div>
+            <strong>Made for your journey</strong>
+            <p>Choose a destination and your preferred travel date.</p>
+          </div>
+        </div>
+
+        <div class="contact-benefit">
+          <span>✦</span>
+          <div>
+            <strong>Simple trip planning</strong>
+            <p>Start with your travel details in one place.</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="trip-form" id="tripForm">
+        <h3>Plan your trip</h3>
+        <p class="form-subtitle">Tell us a little about your plans.</p>
+
+        <label for="travellerName">Your name</label>
+        <input type="text" id="travellerName"
+               placeholder="Enter your name" required maxlength="80">
+
+        <label for="destination">Choose destination</label>
+        <select id="destination" required>
+          <option value="">Select a destination</option>
+          <option>Mountain Adventures</option>
+          <option>Beach Holidays</option>
+          <option>Luxury Getaways</option>
+          <option>Forest Escapes</option>
+        </select>
+
+        <div class="form-row">
+          <div>
+            <label for="travelDate">Travel date</label>
+            <input type="date" id="travelDate" required>
+          </div>
+          <div>
+            <label for="travellers">Travellers</label>
+            <input type="number" id="travellers"
+                   min="1" max="50" value="2" required>
+          </div>
+        </div>
+
+        <label for="travelStyle">Travel style</label>
+        <select id="travelStyle" required>
+          <option value="">Choose your style</option>
+          <option>Adventure</option>
+          <option>Relaxation</option>
+          <option>Family holiday</option>
+          <option>Luxury</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary form-submit">
+          Prepare Trip Request <span>↗</span>
+        </button>
+
+        <p id="formMessage" class="form-message" role="status"
+           aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#home" class="logo">Wander<span>Way.</span></a>
+    <p>Made for dreamers, explorers and everywhere in between.</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+    <div class="footer-bottom">
+      <span>© 2026 WanderWay Travels</span>
+      <span>Sample portfolio project · Not a real travel agency</span>
+    </div>
+  </footer>
+
+</body>
+</html>
